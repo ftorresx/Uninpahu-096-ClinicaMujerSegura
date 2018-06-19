@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.acordeon input {
+    display: none;
+}
+
+.acordeon__titulo {
+    display: block;
+    padding: 15px;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.acordeon__titulo:hover {
+    background: rgba(220,20,60,0.5);
+}
+
+.acordeon__contenido{
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+.acordeon input:checked ~ .acordeon__contenido{
+    height: auto;
+    margin: 10px 0;
+}
+
+h5{
+	font-family: verdana;
+	font-size: 70%;
+}
+
+
+
+body{
+	box-shadow: 6px 6px 6px #D3D2D2;
+	padding: 20px;
+	margin: 50px;
+	border-radius: 20px/10px;
+}
+ img{
+ 	width: 150px;
+    height: 180px;
+    background: #09090A;
+ 	border-radius: 20px/10px;
+ }
+
+header {
+	/*background-color: #FE9A2E; border: 1px solid;*/
+	padding: 5px;
+	margin: 5px;
+	
+	overflow-x: hidden;
+}
+
+.left{
+	margin: 30px 0px 0px 30px;
+	position: absolute;
+	
+	
+}
+.sec{
+	overflow: hidden;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+section {
+	/*border: 1px solid;*/
+	padding :5px;
+	margin: 5px;
+	
+}
+
+.ubica{
+	float: right;
+	margin: 10px 20px 0px 0px; 
+}
+
+p {
+
+	font-family: verdana;
+	text-align: left;
+}
+
+.inter{
+	line-height: 1,6;
+	font-size: 150%;
+}
+h1{
+	text-align: center;
+	font-family: verdana;
+	font-size: 10;
+	border-style: inset;
+	border-radius: 10px/5px;
+	background-color: #3C8CCA;
+}
+
+
+
