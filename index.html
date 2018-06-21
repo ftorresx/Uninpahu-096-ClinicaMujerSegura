@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Ingreso a la aplicación</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
-    <div class="main">
-        <div class="wrap">
-            <form action="">
-                <h2>Formulario de Login</h2>
-                <input type="text" placeholder="&#9919; Usuario" name="usuario">
-                <input type="password" placeholder="&#9919; Contraseña" name="contraseña">
-                <input type="submit" value="Ingresar">
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
             </form>
         </div>
-    </div>
-
-    <a href="#" id="btn-toggle" class="btn-toggle">Abrir</a>
-
-    <section class="seccionToggle">
-        <div class="wrap">
-            <button>Información</button>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>                
+                <input type="email" placeholder="Correo Electronico" required>
+                <input type="text" placeholder="Teléfono" required>
+                <input type="submit" value="Registrarse">
+            </form>
         </div>
-    </section>
-
-
-    <script src="js/seccion.js"></script>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
 </body>
-
 </html>
